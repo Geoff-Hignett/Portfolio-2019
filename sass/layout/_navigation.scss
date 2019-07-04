@@ -1,0 +1,40 @@
+.navigation {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 3px solid red;
+
+  &__nav {
+    display: flex;
+    list-style: none;
+  }
+
+  &__img {
+    width: 68px;
+    height: 68px;
+    margin-left: 5rem;
+  }
+
+  &__item {
+    margin-right: 3rem;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__burger-line {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: $color-white;
+    margin: 0.5rem;
+  }
+}
