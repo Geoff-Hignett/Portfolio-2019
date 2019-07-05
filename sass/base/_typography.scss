@@ -2,6 +2,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
 .heading-primary {
   color: $color-white;
   font-size: 7rem;
@@ -12,4 +16,23 @@ body {
 .sub-heading {
   color: $color-white;
   font-size: 3rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-sub-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 2px solid #000;
 }
