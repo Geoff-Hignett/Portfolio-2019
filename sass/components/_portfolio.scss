@@ -1,11 +1,11 @@
 .portfolio {
   &__head {
     background-color: $color-primary-light-2;
-    padding: 8rem 0;
+    padding: $section-padding;
   }
 
   &__content {
-    padding: 8rem 0;
+    padding: $section-padding;
   }
   &__info {
     width: 40%;

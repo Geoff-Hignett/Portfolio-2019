@@ -23,6 +23,10 @@ html {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+
+  &--white {
+    color: $color-white;
+  }
 }
 
 .section-sub-heading {

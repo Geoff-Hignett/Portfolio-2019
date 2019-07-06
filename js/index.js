@@ -1,3 +1,14 @@
+// Define navbar background according to scroll
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= 700) {
+      $('.navigation').css('background-color', '#26596a');
+    } else {
+      $('.navigation').css('background-color', 'transparent');
+    }
+  });
+});
+
 const navSlide = () => {
   const burger = document.querySelector('.navigation__burger');
   const nav = document.querySelector('.navigation__nav');
