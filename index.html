@@ -17,22 +17,30 @@
     <header class="header">
       <!-- NAVBAR -->
       <nav class="navigation">
-        <img src="img/logo.jpg" alt="" class="navigation__img" />
-        <ul class="navigation__nav">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Portfolio</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">About</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="navigation__burger">
-          <div class="navigation__burger-line navigation__burger-line--1"></div>
-          <div class="navigation__burger-line navigation__burger-line--2"></div>
-          <div class="navigation__burger-line navigation__burger-line--3"></div>
+        <div class="container-flex">
+          <div class="logo"><a href="#" class="logo">GH</a></div>
+          <ul class="navigation__nav">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">About</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="navigation__burger">
+            <div
+              class="navigation__burger-line navigation__burger-line--1"
+            ></div>
+            <div
+              class="navigation__burger-line navigation__burger-line--2"
+            ></div>
+            <div
+              class="navigation__burger-line navigation__burger-line--3"
+            ></div>
+          </div>
         </div>
       </nav>
 
@@ -42,7 +50,9 @@
         <p class="sub-heading mb-4">
           Front-end web developer based in Bedfordshire, UK.
         </p>
-        <button class="btn btn--animated">See my work</button>
+        <a href="#portfolio" class="btn btn__primary btn--animated"
+          >See my work</a
+        >
       </div>
     </header>
 
@@ -63,7 +73,7 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">EXPERIENCE P2P</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 Experience P2P is a multi-page alternative investment site. It
                 was the first site I built using Bootstrap 4. I focussed on
                 making a clean, informative website and got a good grounding of
@@ -95,10 +105,11 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">10 British Questions</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 10 British Questions is a random quiz app. It is rendered almost
                 entirely using JavaScript/jQuery with almost no HTML. This was a
-                great opportunity for practising DOM manipulation.
+                great opportunity for practising DOM manipulation as well as
+                working with data structures and logic in JavaScript.
               </p>
               <div class="portfolio__skills-container mb-6">
                 <div class="portfolio__skill">HTML5</div>
@@ -127,7 +138,7 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">Riff World</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 Riff World is a landing page for a guitar tuition/events
                 organisation. I used the Materialize CSS framework for this
                 project. I also practised jQuery skills to enable the Scrollfire
@@ -159,7 +170,7 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">Typing Trainer</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 Typing trainer is a game which tests the typing speed of the
                 player. After a certain number of points score the difficulty
                 intensifies. It was a good exercise for practising logic in
@@ -193,10 +204,11 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">Hignett's Rocking Horses</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 Hignett's Rocking Horses is a historical single-page website
-                made in Bootstrap 4. It also makes use of the Scrollspy and
-                SmoothScroll extentions.
+                made in Bootstrap 4. Since it is not a commercial site I used a
+                more traditional style inspired by newspaper styles. It also
+                makes use of the Scrollspy and SmoothScroll extentions.
               </p>
               <div class="portfolio__skills-container mb-6">
                 <div class="portfolio__skill">HTML5</div>
@@ -226,7 +238,7 @@
           <div class="portfolio__item">
             <div class="portfolio__info">
               <h3 class="heading-tertiary mb-3">Movie Quote Generator</h3>
-              <p class="portfolio__description mb-3">
+              <p class="portfolio__description mb-1">
                 Movie Quote Generator was one of the first apps I made while
                 working through the freeCodeCamp Front-End programme. It makes
                 AJAX calls to retrieve the quotes from an API on the Mashape
@@ -266,7 +278,7 @@
           <div class="about__features">
             <div class="about__features-box">
               <i class="fas fa-tachometer-alt about__features-icon mb-3"></i>
-              <div class="about__features-heading">Fast</div>
+              <div class="about__features-heading mb-1">Fast</div>
               <p class="about__features-text">
                 Minimal loading times to create the best possible user
                 experience.
@@ -274,30 +286,101 @@
             </div>
             <div class="about__features-box">
               <i class="fas fa-align-justify about__features-icon mb-3"></i>
-              <div class="about__features-heading">Clean</div>
+              <div class="about__features-heading mb-1">Clean</div>
               <p class="about__features-text">
-                Modern looking sites
+                Modern looking websites that suit the 21st century.
               </p>
             </div>
             <div class="about__features-box">
               <i class="fas fa-cogs about__features-icon mb-3"></i>
-              <div class="about__features-heading">Responsive</div>
+              <div class="about__features-heading mb-1">Responsive</div>
               <p class="about__features-text">
-                My websites are super fast to create the best possible user
-                experience.
+                My websites look great on all devices.
               </p>
             </div>
-            <div class="about__features-box">
-              <i class="fas fa-icons about__features-icon mb-3"></i>
-              <div class="about__features-heading">Creative</div>
-              <p class="about__features-text">
-                My websites are super fast to create the best possible user
-                experience.
+          </div>
+          <div class="about__info">
+            <div class="about__details">
+              <h3 class="mb-2">Who am I?</h3>
+              <p>
+                I am a self-taught front-end web developer who loves learning
+                new technologies.
               </p>
+            </div>
+            <div class="about__skills">
+              <div class="about__skills-list">
+                <div class="about__skills-item">HTML</div>
+                <div class="about__skills-item">CSS</div>
+                <div class="about__skills-item">JavaScript</div>
+                <div class="about__skills-item">jQuery</div>
+                <div class="about__skills-item">SCSS</div>
+                <div class="about__skills-item">Bootstrap 4</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__box">
+            <h2 class="heading-secondary mb-3">Contact</h2>
+            <p class="section-sub-heading mb-3">Here you can contact me.</p>
+            <div class="contact__form">
+              <form action="" method="POST" class="contact__form-items">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  class="contact__form-item"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  class="contact__form-item"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Type message here..."
+                  cols="30"
+                  rows="10"
+                  class="contact__form-item"
+                  required
+                ></textarea>
+                <input
+                  type="submit"
+                  class="btn btn__form"
+                  value="Send Message"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__icons">
+            <a href="https://github.com/Geoff-Hignett"
+              ><i class="fab fa-github footer__icon"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/geoff-hignett-7680b617b/"
+              ><i class="fab fa-linkedin footer__icon"></i
+            ></a>
+            <a href="https://codepen.io/geoff-hignett/"
+              ><i class="fab fa-codepen footer__icon"></i
+            ></a>
+          </div>
+          <div class="footer__text">
+            Copyright &copy; Geoff Hignett 2019
+          </div>
+        </div>
+      </footer>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

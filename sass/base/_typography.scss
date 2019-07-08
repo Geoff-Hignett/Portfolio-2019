@@ -11,6 +11,7 @@ html {
   font-size: 7rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 .sub-heading {
@@ -39,4 +40,10 @@ html {
   font-weight: 700;
   display: inline-block;
   border-bottom: 2px solid #000;
+}
+
+.logo {
+  color: $color-white;
+  font-size: 5rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }

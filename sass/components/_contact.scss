@@ -1,0 +1,45 @@
+.contact {
+  padding: $section-padding;
+  background-color: $color-primary-light-2;
+
+  &__box {
+  }
+
+  &__form {
+    background-image: linear-gradient(
+      to left top,
+      rgba($color-primary-dark, 0.2),
+      rgba($color-primary, 0.8)
+    );
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 50px;
+  }
+
+  &__form-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+
+    &:not(:last-child) {
+      height: 3rem;
+    }
+  }
+
+  &__form-item {
+    margin: 2rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $color-primary-light-2;
+    outline: none;
+    color: $color-white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+
+    &::placeholder {
+      color: $color-white;
+    }
+  }
+}
