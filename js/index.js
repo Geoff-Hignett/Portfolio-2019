@@ -1,7 +1,7 @@
 // Define navbar background according to scroll
 $(document).ready(function() {
   $(window).scroll(function() {
-    if ($(window).scrollTop() >= 700) {
+    if ($(window).scrollTop() >= 600) {
       $('.navigation').css('background-color', '#26596a');
     } else {
       $('.navigation').css('background-color', 'transparent');
@@ -9,11 +9,15 @@ $(document).ready(function() {
   });
 });
 
+// Sidenav functionality
 const navSlide = () => {
   const burger = document.querySelector('.navigation__burger');
   const nav = document.querySelector('.navigation__nav');
   const navLinks = document.querySelectorAll('.navigation__item');
   //  Toggle nav
+
+  // Close nav on click
+
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     // Animate links
@@ -31,3 +35,14 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// Close sidenav on outside click
+
+// Set smoothscroll to regular speed
+var linear = new SmoothScroll(
+  '[data-easing="linear"]',
+  { easing: 'linear' },
+  {
+    speed: 100
+  }
+);

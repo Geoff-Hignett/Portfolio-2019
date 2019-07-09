@@ -14,10 +14,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid #fff;
+    border: 3px solid $color-white;
     padding: 3rem 2rem;
     border-radius: 50px;
     background-color: $color-primary-dark;
+
+    @include respond(laptop) {
+      width: 25%;
+    }
   }
 
   &__features-icon {
@@ -38,12 +42,18 @@
 
   &__info {
     display: flex;
+    align-items: center;
     padding: $section-padding;
   }
 
   &__details {
     width: 50%;
     font-size: 2rem;
+    padding-left: 3rem;
+  }
+
+  &__photo {
+    width: 30%;
   }
 
   &__skills {

@@ -7,6 +7,9 @@
   body {
     overflow-x: hidden; } }
 
+html {
+  scroll-behavior: smooth; }
+
 .container {
   max-width: 1400px;
   margin: 0 auto; }
@@ -82,7 +85,8 @@ html {
 
 .section-sub-heading {
   font-size: 2rem;
-  text-align: center; }
+  text-align: center;
+  padding: 0 5rem; }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -93,12 +97,17 @@ html {
 .logo {
   color: #fff;
   font-size: 5rem;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  backface-visibility: hidden; }
+  .logo:hover {
+    transform: rotate(-5deg); }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(69, 117, 133, 0.8), rgba(16, 64, 80, 0.8)), url(../../img/back.jpg);
   background-size: cover;
   position: relative;
+  text-align: center;
   height: 100vh; }
   .header__info-box {
     position: absolute;
@@ -212,20 +221,25 @@ html {
   padding: 8rem 0; }
 
 .portfolio__info {
-  width: 40%;
-  padding-left: 3rem; }
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem; }
 
 .portfolio__item {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media (max-width: 56.25em) {
+    .portfolio__item {
+      flex-direction: column;
+      justify-content: center; } }
 
 .portfolio__img-container {
-  width: 60%;
+  width: 50%;
   text-align: center; }
 
 .portfolio__img {
-  width: 60%;
+  width: 70%;
   display: inline-block;
   margin: 0 auto;
   border-radius: 0.5rem;
@@ -277,6 +291,9 @@ html {
     padding: 3rem 2rem;
     border-radius: 50px;
     background-color: #104050; }
+    @media (max-width: 75em) {
+      .about__features-box {
+        width: 25%; } }
   .about__features-icon {
     color: #fff;
     font-size: 10rem; }
@@ -289,10 +306,14 @@ html {
     font-size: 1.8rem; }
   .about__info {
     display: flex;
+    align-items: center;
     padding: 8rem 0; }
   .about__details {
     width: 50%;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-left: 3rem; }
+  .about__photo {
+    width: 30%; }
   .about__skills {
     width: 50%;
     display: flex;

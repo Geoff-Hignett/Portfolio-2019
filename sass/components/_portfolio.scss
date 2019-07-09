@@ -8,21 +8,27 @@
     padding: $section-padding;
   }
   &__info {
-    width: 40%;
-    padding-left: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
   }
   &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   &__img-container {
-    width: 60%;
+    width: 50%;
     text-align: center;
   }
 
   &__img {
-    width: 60%;
+    width: 70%;
     display: inline-block;
     margin: 0 auto;
     border-radius: 0.5rem;

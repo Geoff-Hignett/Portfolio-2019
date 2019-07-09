@@ -1,9 +1,25 @@
 // MEDIA QUERIES
 
+// max-width = 1200px = 75em         laptop
+// max-width = 900px = 56.25em       tablet
+// max-width = 768px = 48em
+
 @mixin respond($breakpoint) {
+  @if ($breakpoint == laptop) {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tablet) {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
   @if ($breakpoint == phone) {
     @media (max-width: 48em) {
       @content;
-    } // 768px
+    }
   }
 }

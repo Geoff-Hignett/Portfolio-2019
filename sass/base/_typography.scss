@@ -33,6 +33,7 @@ html {
 .section-sub-heading {
   font-size: 2rem;
   text-align: center;
+  padding: 0 5rem;
 }
 
 .heading-tertiary {
@@ -46,4 +47,10 @@ html {
   color: $color-white;
   font-size: 5rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: rotate(-5deg);
+  }
 }
