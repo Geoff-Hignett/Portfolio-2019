@@ -9,6 +9,10 @@
     border-radius: 50px;
     font-size: 1.8rem;
     text-decoration: none;
+
+    @include respond(tablet-port) {
+      font-size: 1.55rem;
+    }
   }
 
   &__primary {
@@ -16,6 +20,11 @@
     color: $color-white;
     border: 3px solid $color-white;
     padding: 1.5rem 4rem;
+
+    @include respond(tablet-port) {
+      padding: 1.25rem 3.4rem;
+      border: 2.6px solid $color-white;
+    }
 
     &:hover {
       background-color: $color-white;

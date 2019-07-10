@@ -16,7 +16,7 @@
     margin: 0;
 
     //Create sidenav for mobile
-    @include respond(phone) {
+    @include respond(tablet-port) {
       position: absolute;
       top: 10vh;
       height: 90vh;
@@ -29,7 +29,7 @@
   }
 
   &__item {
-    @include respond(phone) {
+    @include respond(tablet-port) {
       margin-top: 3rem;
       opacity: 0;
     }
@@ -45,13 +45,26 @@
       background-color: $color-white;
       color: $color-primary-dark;
     }
+
+    // Fill gaps in sidenav
+    &--2 {
+      @include respond(tablet-port) {
+        padding: 2.2rem 5.6rem;
+      }
+    }
+
+    &--3 {
+      @include respond(tablet-port) {
+        padding: 2.2rem 3.8rem;
+      }
+    }
   }
 
   &__burger {
     display: none;
     cursor: pointer;
 
-    @include respond(phone) {
+    @include respond(tablet-port) {
       display: block;
     }
   }

@@ -1,8 +1,11 @@
 // MEDIA QUERIES
 
 // max-width = 1200px = 75em         laptop
-// max-width = 900px = 56.25em       tablet
-// max-width = 768px = 48em
+// max-width = 900px = 56.25em       tablet-land
+// max-width = 768px = 48em          tablet-port
+// max-width = 624px = 39em          mobile-lg
+// max-width = 500px = 31.25em       mobile
+// max-width = 414px = 25.875em      mobile-sm
 
 @mixin respond($breakpoint) {
   @if ($breakpoint == laptop) {
@@ -11,14 +14,32 @@
     }
   }
 
-  @if ($breakpoint == tablet) {
+  @if ($breakpoint == tablet-land) {
     @media (max-width: 56.25em) {
       @content;
     }
   }
 
-  @if ($breakpoint == phone) {
+  @if ($breakpoint == tablet-port) {
     @media (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile-lg) {
+    @media (max-width: 39em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile) {
+    @media (max-width: 31.25em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile-sm) {
+    @media (max-width: 25.875em) {
       @content;
     }
   }

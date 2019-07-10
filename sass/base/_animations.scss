@@ -1,4 +1,4 @@
-// Side nav
+// Make side nav appear
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -10,7 +10,7 @@
   }
 }
 
-// Button
+// Move header button up
 @keyframes moveUp {
   0% {
     opacity: 0;

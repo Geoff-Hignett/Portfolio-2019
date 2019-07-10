@@ -16,8 +16,6 @@ const navSlide = () => {
   const navLinks = document.querySelectorAll('.navigation__item');
   //  Toggle nav
 
-  // Close nav on click
-
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     // Animate links
@@ -39,10 +37,6 @@ navSlide();
 // Close sidenav on outside click
 
 // Set smoothscroll to regular speed
-var linear = new SmoothScroll(
-  '[data-easing="linear"]',
-  { easing: 'linear' },
-  {
-    speed: 100
-  }
-);
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500
+});

@@ -1,13 +1,19 @@
 .about {
-  padding: $section-padding;
   background-color: $color-primary-light;
   color: $color-white;
   text-align: center;
+  padding: $section-padding;
 
   &__features {
     display: flex;
     justify-content: space-around;
+
+    @include respond(mobile-lg) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
   &__features-box {
     width: 20%;
     height: 30rem;
@@ -22,34 +28,70 @@
     @include respond(laptop) {
       width: 25%;
     }
+
+    @include respond(tablet-port) {
+      width: 30%;
+    }
+
+    @include respond(mobile-lg) {
+      width: 50%;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include respond(mobile) {
+      width: 70%;
+    }
   }
 
   &__features-icon {
-    color: $color-white;
     font-size: 10rem;
   }
+
   &__features-heading {
     font-weight: 700;
-    color: $color-white;
     font-size: 3rem;
   }
-  &__features-text {
-    // font-weight: 700;
 
-    color: $color-white;
+  &__features-text {
     font-size: 1.8rem;
+
+    @include respond(tablet-port) {
+      font-size: 1.68rem;
+    }
+
+    @include respond(mobile-lg) {
+      font-size: 1.8rem;
+    }
   }
 
   &__info {
     display: flex;
     align-items: center;
-    padding: $section-padding;
+    margin-top: 5rem;
+
+    @include respond(mobile-lg) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__details {
     width: 50%;
     font-size: 2rem;
     padding-left: 3rem;
+
+    @include respond(tablet-port) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(mobile-lg) {
+      width: 80%;
+      margin-bottom: 5rem;
+      padding: 0;
+    }
   }
 
   &__photo {
@@ -60,10 +102,19 @@
     width: 50%;
     display: flex;
     justify-content: center;
+
+    @include respond(mobile) {
+      width: 100%;
+    }
   }
+
   &__skills-list {
     display: flex;
     flex-direction: column;
+
+    @include respond(mobile) {
+      width: 68%;
+    }
   }
 
   &__skills-item {
@@ -73,6 +124,10 @@
     border-radius: 50px;
     padding: 1rem 2.7rem;
     font-weight: 700;
+
+    @include respond(mobile) {
+      font-size: 2.5rem;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2rem;

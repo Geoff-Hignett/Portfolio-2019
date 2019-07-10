@@ -12,11 +12,26 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+
+  @include respond(tablet-port) {
+    font-size: 6rem;
+  }
+  @include respond(mobile) {
+    font-size: 5rem;
+  }
 }
 
 .sub-heading {
   color: $color-white;
   font-size: 3rem;
+
+  @include respond(tablet-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 2em;
+  }
 }
 
 .heading-secondary {
@@ -28,19 +43,32 @@ html {
   &--white {
     color: $color-white;
   }
+
+  @include respond(mobile) {
+    font-size: 3.4rem;
+  }
 }
 
 .section-sub-heading {
   font-size: 2rem;
   text-align: center;
   padding: 0 5rem;
+
+  @include respond(mobile-lg) {
+    font-size: 1.8rem;
+    padding: 0 3rem;
+  }
 }
 
 .heading-tertiary {
   font-size: 3rem;
   font-weight: 700;
   display: inline-block;
-  border-bottom: 2px solid #000;
+  text-decoration: underline;
+
+  @include respond(mobile) {
+    font-size: 2.5rem;
+  }
 }
 
 .logo {
@@ -48,9 +76,12 @@ html {
   font-size: 5rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
-  backface-visibility: hidden;
 
   &:hover {
     transform: rotate(-5deg);
+
+    @include respond(laptop) {
+      transform: rotate(0);
+    }
   }
 }

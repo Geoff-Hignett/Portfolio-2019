@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/c0116b9cd6.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
@@ -14,7 +21,6 @@
   </head>
   <body>
 
-
     <!-- HEADER -->
     <header class="header">
       <!-- NAVBAR -->
@@ -23,13 +29,13 @@
           <div class="logo"><a href="#" class="logo">GH</a></div>
           <ul class="navigation__nav">
             <li class="navigation__item">
-              <a class="navigation__link" href="#portfolio">Portfolio</a>
+              <a class="navigation__link navigation__link--1" href="#portfolio">Portfolio</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#about">About</a>
+              <a class="navigation__link navigation__link--2" href="#about">About</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#contact">Contact</a>
+              <a class="navigation__link navigation__link--3" href="#contact">Contact</a>
             </li>
           </ul>
           <div class="navigation__burger">
@@ -61,7 +67,7 @@
     <main>
       <!-- PORTFOLIO -->
       <section class="portfolio" id="portfolio">
-        <div class="portfolio__head">
+        <header class="portfolio__head">
           <div class="container">
             <h2 class="heading-secondary mb-3">Portfolio</h2>
             <p class="section-sub-heading">
@@ -70,7 +76,7 @@
               site, just click on the image.
             </p>
           </div>
-        </div>
+        </header>
         <div class="portfolio__content container">
           <div class="portfolio__item">
             <div class="portfolio__info">
@@ -307,7 +313,8 @@
                 A self-taught front-end web developer who loves learning new
                 technologies. I have always enjoyed problem solving and
                 algorithms.
-                <br><br>I use online courses to build my knowledge and then practise what I have learnt by building exciting projects.
+                <br /><br />I use online courses to build my knowledge and then
+                practise what I have learnt by building exciting projects.
                 <br /><br />My background is in teaching modern languages
                 (another hobby of mine) which has proved a great experience for
                 assimilating the syntax of programming languages. <br />
@@ -332,11 +339,10 @@
       <!-- CONTACT -->
       <section class="contact" id="contact">
         <div class="container">
-          <div class="contact__box">
             <h2 class="heading-secondary mb-3">Contact</h2>
-            <p class="section-sub-heading mb-3">Here you can contact me.</p>
+            <p class="section-sub-heading mb-3">Have a great idea in mind for a project? Get in touch by filling out this form.</p>
             <div class="contact__form">
-              <form action="" method="POST" class="contact__form-items">
+              <form action="https://formspree.io/geoffhignett@hotmail.com" method="POST" method="POST" class="contact__form-items">
                 <input
                   type="text"
                   name="name"
@@ -355,7 +361,7 @@
                   name="message"
                   placeholder="Type message here..."
                   cols="30"
-                  rows="10"
+                  rows="5"
                   class="contact__form-item"
                   required
                 ></textarea>
@@ -366,7 +372,6 @@
                 />
               </form>
             </div>
-          </div>
         </div>
       </section>
 
@@ -377,7 +382,9 @@
             <a href="https://github.com/Geoff-Hignett" target="_blank"
               ><i class="fab fa-github footer__icon"></i
             ></a>
-            <a href="https://www.linkedin.com/in/geoff-hignett-7680b617b/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/geoff-hignett-7680b617b/"
+              target="_blank"
               ><i class="fab fa-linkedin footer__icon"></i
             ></a>
             <a href="https://codepen.io/geoff-hignett/" target="_blank"
@@ -398,7 +405,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/index.js"></script>
-
-
   </body>
 </html>

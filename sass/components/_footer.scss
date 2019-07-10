@@ -1,27 +1,33 @@
 .footer {
-  padding: $section-padding;
   background-color: $color-primary-dark;
   color: $color-white;
   text-align: center;
+  padding: $section-padding-sm;
 
   &__icons {
     max-width: 400px;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
+    width: 90%;
   }
+
   &__icon {
     font-size: 7rem;
     color: $color-white;
     transition: all 0.3s;
-    backface-visibility: hidden;
 
     &:hover {
       transform: scale(1.1);
       color: $color-primary-light;
     }
   }
+
   &__text {
     font-size: 2rem;
+
+    @include respond(tablet-port) {
+      font-size: 1.7rem;
+    }
   }
 }
