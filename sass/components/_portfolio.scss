@@ -19,6 +19,14 @@
     }
   }
 
+  &__head-link {
+    color: inherit;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
   &__info {
     width: 50%;
     margin: 0 auto;
@@ -61,9 +69,10 @@
     }
   }
 
-  &__link {
+  &__img-link {
     margin: 0 auto;
   }
+
   &__description {
     font-size: 2rem;
 

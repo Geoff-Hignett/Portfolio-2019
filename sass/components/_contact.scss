@@ -3,11 +3,7 @@
   padding: $section-padding;
 
   &__form {
-    background-image: linear-gradient(
-      to left top,
-      rgba($color-primary-dark, 0.2),
-      rgba($color-primary, 0.8)
-    );
+    background-color: $color-primary-dark;
     width: 80%;
     margin: 0 auto;
     padding: 3rem;

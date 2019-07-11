@@ -94,8 +94,7 @@ html {
 .heading-tertiary {
   font-size: 3rem;
   font-weight: 700;
-  display: inline-block;
-  text-decoration: underline; }
+  display: inline-block; }
   @media (max-width: 31.25em) {
     .heading-tertiary {
       font-size: 2.5rem; } }
@@ -167,6 +166,11 @@ html {
       flex-direction: column;
       justify-content: center; } }
 
+.portfolio__head-link {
+  color: inherit; }
+  .portfolio__head-link:hover {
+    color: #104050; }
+
 .portfolio__info {
   width: 50%;
   margin: 0 auto;
@@ -200,7 +204,7 @@ html {
   .portfolio__img:hover {
     transform: scale(1.05); }
 
-.portfolio__link {
+.portfolio__img-link {
   margin: 0 auto; }
 
 .portfolio__description {
@@ -346,7 +350,7 @@ html {
   background-color: #e2ecf0;
   padding: 8rem 0; }
   .contact__form {
-    background-image: linear-gradient(to left top, rgba(16, 64, 80, 0.2), rgba(38, 89, 106, 0.8));
+    background-color: #104050;
     width: 80%;
     margin: 0 auto;
     padding: 3rem;
@@ -446,15 +450,36 @@ html {
     color: #fff;
     text-decoration: none;
     padding: 2.2rem 2rem; }
+    @media (max-width: 39em) {
+      .navigation__link {
+        font-size: 2rem; } }
+    @media (max-width: 31.25em) {
+      .navigation__link {
+        font-size: 1.5rem; } }
     .navigation__link:hover {
       background-color: #fff;
       color: #104050; }
+    @media (max-width: 31.25em) {
+      .navigation__link--1 {
+        padding: 2.2rem 0.2rem; } }
     @media (max-width: 48em) {
       .navigation__link--2 {
         padding: 2.2rem 5.6rem; } }
+    @media (max-width: 39em) {
+      .navigation__link--2 {
+        padding: 2.2rem 4.4rem; } }
+    @media (max-width: 31.25em) {
+      .navigation__link--2 {
+        padding: 2.2rem 2.1rem; } }
     @media (max-width: 48em) {
       .navigation__link--3 {
-        padding: 2.2rem 3.8rem; } }
+        padding: 2.2rem 3.6rem; } }
+    @media (max-width: 39em) {
+      .navigation__link--3 {
+        padding: 2.2rem 3.2rem; } }
+    @media (max-width: 31.25em) {
+      .navigation__link--3 {
+        padding: 2.2rem 1.1rem; } }
   .navigation__burger {
     display: none;
     cursor: pointer; }

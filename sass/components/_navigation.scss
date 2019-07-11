@@ -41,21 +41,51 @@
     text-decoration: none;
     padding: 2.2rem 2rem;
 
+    @include respond(mobile-lg) {
+      font-size: 2rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 1.5rem;
+    }
+
     &:hover {
       background-color: $color-white;
       color: $color-primary-dark;
     }
 
     // Fill gaps in sidenav
+    &--1 {
+      @include respond(mobile) {
+        padding: 2.2rem 0.2rem;
+      }
+    }
+
     &--2 {
       @include respond(tablet-port) {
         padding: 2.2rem 5.6rem;
+      }
+
+      @include respond(mobile-lg) {
+        padding: 2.2rem 4.4rem;
+      }
+
+      @include respond(mobile) {
+        padding: 2.2rem 2.1rem;
       }
     }
 
     &--3 {
       @include respond(tablet-port) {
-        padding: 2.2rem 3.8rem;
+        padding: 2.2rem 3.6rem;
+      }
+
+      @include respond(mobile-lg) {
+        padding: 2.2rem 3.2rem;
+      }
+
+      @include respond(mobile) {
+        padding: 2.2rem 1.1rem;
       }
     }
   }

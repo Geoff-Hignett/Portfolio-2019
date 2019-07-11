@@ -9,13 +9,15 @@ $(document).ready(function() {
   });
 });
 
+//
+
 // Sidenav functionality
 const navSlide = () => {
   const burger = document.querySelector('.navigation__burger');
   const nav = document.querySelector('.navigation__nav');
   const navLinks = document.querySelectorAll('.navigation__item');
-  //  Toggle nav
 
+  //  Toggle nav
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     // Animate links
@@ -33,8 +35,6 @@ const navSlide = () => {
 };
 
 navSlide();
-
-// Close sidenav on outside click
 
 // Set smoothscroll to regular speed
 var scroll = new SmoothScroll('a[href*="#"]', {
